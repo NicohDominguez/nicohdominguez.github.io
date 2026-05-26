@@ -1,0 +1,212 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Titulos */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de 960px */
+main, header, footer {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Menu de navegacion */
+header {
+    padding: 40px 0;
+    border-bottom: 1px solid #1C1C1C;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #888;
+}
+
+/* Seccion de presentacion */
+#presentacion {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#presentacion figure {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 178px;
+    height: 178px;
+    background: linear-gradient(135deg, #111111 0%, #1C1C1C 100%);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+    transition: 0.3s;
+}
+
+#presentacion figure:hover {
+    transform: translateY(-6px);
+}
+
+#presentacion img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1C1C1C;
+}
+
+#presentacion h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+#presentacion p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #BBB;
+}
+
+/* Galeria de trabajos */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galeria article {
+    background-color: #1C1C1C;
+    flex: 1 1 280px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.galeria article:hover {
+    transform: translateY(-5px);
+}
+
+.galeria article img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.galeria article:hover img {
+    filter: grayscale(0%);
+}
+
+.galeria article h3 {
+    font-size: 1em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.galeria a {
+    text-decoration: none;
+}
+
+/* Seccion de contacto */
+#contacto {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.icono-fa {
+    font-size: 45px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.icono-fa:hover {
+    transform: scale(1.2);
+    color: #CCCCCC;
+}
+
+/* Pagina de biografia */
+#biografia {
+    padding: 80px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#biografia h1 {
+    font-size: 2.5em;
+    border-left: 5px solid #FFFFFF;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+#biografia p {
+    margin-bottom: 25px;
+    color: #CCCCCC;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 40px 0;
+    border-top: 1px solid #1C1C1C;
+    text-align: center;
+    font-size: 0.85em;
+    color: #555;
+}
+
+.volver-arriba {
+    display: block;
+    color: #888;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.volver-arriba:hover {
+    color: #FFF;
+}

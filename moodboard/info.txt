@@ -1,0 +1,26 @@
+DATOS DEL MOODBOARD - NICOLÁS HERNÁN DOMÍNGUEZ
+
+ESTILO VISUAL:
+Minimalista, Dark Mode (Fondo oscuro con tipografía clara).
+
+PALETA DE COLORES:
+- Fondo: #0A0A0A (Negro mate)
+- Títulos y Texto Principal: #FFFFFF (Blanco)
+- Detalles y Hovers: #CCCCCC (Gris claro)
+- Bordes y Separadores: #1C1C1C (Gris muy oscuro)
+
+TIPOGRAFÍAS (Google Fonts):
+- Títulos (h1, h2, h3): Montserrat (700 - Bold)
+- Cuerpo de texto (p, a): Roboto (400 - Regular)
+
+ICONOGRAFÍA:
+- FontAwesome 6 (Brands para Instagram y Solid para Email).
+
+MODIFICACIONES REALIZADAS:
+1. Favicon: Agregado link rel="icon" en head de index.html y biografia.html apuntando a img/favicon.png
+   - Cuando subas tu logo o una "N" a img/favicon.png, aparecerá en la pestaña del navegador
+2. Efecto Galería Blanco y Negro:
+   - Las miniaturas de trabajos (ejercicios) comienzan en blanco y negro (grayscale 100%)
+   - Al pasar el mouse, se colorean (grayscale 0%)
+   - Transición suave de 0.5s
+3. Scroll suave: scroll-behavior: smooth en html (ya implementado) para navegación interna en links de menú
