@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9; /* Color de fondo base suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1360px;
+    height: 768px;
+    background-color: #eff6ff; /* Fondo azul pálido de la maqueta */
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+/* SECCIÓN TEXTO (Lado Izquierdo) */
+.text-side {
+    width: 45%;
+    z-index: 10;
+}
+
+h1 {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 75px;
+    color: #1e293b;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: #4f46e5; /* Azul/Violeta de acento */
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    color: #64748b;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+/* SECCIÓN ILUSTRACIÓN (Lado Derecho) */
+.visual-side {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.rocket-img {
+    height: 90%; /* Ajustar para que ocupe gran parte de la altura */
+    width: auto;
+    object-fit: contain;
+    /* Sombra suave para integración, similar a la maqueta */
+    filter: drop-shadow(0 20px 60px rgba(79, 70, 229, 0.1));
+    z-index: 5;
+}

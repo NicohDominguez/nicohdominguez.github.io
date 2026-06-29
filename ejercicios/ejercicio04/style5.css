@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1360px;
+    height: 768px;
+    /* Color de fondo oscuro profundo de la maqueta */
+    background-color: #02040a; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+/* Imagen de fondo de las curvas (esquina superior izquierda e inferior derecha) */
+.bg-pattern {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 600px; /* Ajustar según tamaño de tu imagen */
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.main-layout {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 2; /* Por encima del pattern */
+}
+
+/* SECCIÓN TEXTO */
+.text-side {
+    width: 55%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    color: #7d8396; /* Color grisáceo de la maqueta */
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+/* SECCIÓN IMAGEN DERECHA */
+.visual-side {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    perspective: 1000px; /* Para dar leve sensación de profundidad si hiciera falta */
+}
+
+.chat-img {
+    width: 480px; /* Ajuste basado en la escala de 1360px */
+    height: auto;
+    filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
+}
+
+/* Opcional: Agregar la segunda curva en la parte superior izquierda 
+   si quieres replicar el efecto espejo de la maqueta original */
+.container::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(28,45,100,0.3) 0%, transparent 70%);
+    z-index: 1;
+}
