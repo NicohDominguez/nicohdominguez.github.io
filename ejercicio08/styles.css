@@ -1,0 +1,63 @@
+/*
+ * styles.css — Fondos de secciones hero.
+ * Único CSS personalizado permitido: colores, degradados e imágenes de fondo.
+ */
+
+/* ---- Hero 1: blanco puro ---- */
+.hero-1 {
+  background-color: #ffffff;
+}
+
+/* ---- Hero 2: azul primario Bootstrap ---- */
+.hero-2 {
+  background-color: #0d6efd;
+}
+
+/* ---- Hero 3: gris azulado muy suave ---- */
+.hero-3 {
+  background-color: #f2f6fb;
+}
+
+/* ---- Hero 4: textura de pared con overlay muy oscuro para texto blanco ---- */
+.hero-4 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+    url("img-dist/wall.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---- Hero 5: foto bosque con overlay semitransparente ---- */
+.hero-5 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url("img-dist/bosque.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 440px;
+}
+
+/* ---- Hero 6: amarillo/ámbar Bootstrap ---- */
+.hero-6 {
+  background-color: #ffc107;
+}
+
+/* ---- Hero 7: blanco puro ---- */
+.hero-7 {
+  background-color: #ffffff;
+}
+
+/* ---- Hero 8: blanco (la foto comunidad ocupa la col izquierda) ---- */
+.hero-8 {
+  background-color: #ffffff;
+}
+
+/* ---- Hero 9: paisaje natural con overlay oscuro ---- */
+.hero-9 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+    url("img-dist/rainbow-between-mountains.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 440px;
+}
